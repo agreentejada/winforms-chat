@@ -8,7 +8,9 @@ Due to a variety of technical reasons, I was working on a desktop application th
 winforms-chat is a bare-bones UserControl that consists of two objects: a ChatPanel and a ChatItem. The ChatPanel has most of the basic controls of a chat platform: it let's you type messages, attach files, and separates files and images up to 1.45 MB. It also clears up messy text and allows for the typical SHIFT + ENTER combo.
 
 ChatItem is the main reason this was built. ChatItem is a rectangular panel that auto - resizes on both text and image.
+
 ![](winchat-demo.gif)
+
 ChatItem overrides the OnResize method based on a minimum ratio set by the user, and automatically deals with word-wrapping text so you don't have to. ChatItem also auto-resizes images so that they don't look like malformed spagetthi when put into the client.
 
 
